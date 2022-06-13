@@ -3,13 +3,14 @@ import { JsonDataContext } from "../context/JsonDataContext";
 
 const ContextForm = () => {
   const { jsonDatas, dispatch } = useContext(JsonDataContext);
-  const handleSubmit = (jsonDatas) => {
-    console.log(jsonDatas);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(JSON.stringify(jsonDatas));
   };
   return (
     <div>
       <h1>FormTemplate-context</h1>
-      <form on onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         {jsonDatas.map((data) => {
           return (
             <div key={data.id}>
