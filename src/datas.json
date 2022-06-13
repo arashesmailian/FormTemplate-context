@@ -2,16 +2,16 @@
 	{
 		"id": "1",
 		"title": "Enter your name",
-		"value": null
+		"value": ""
 	},
 	{
 		"id": "2",
 		"title": "Enter your lastname",
-		"value": null
+		"value": ""
 	},
 	{
 		"id": "3",
 		"title": "Enter your age",
-		"value": null
+		"value": ""
 	}
 ]
